@@ -1,8 +1,8 @@
 # toolbox.nvim
-Handful abstractions for intermediate/advanced vim functionalities
+Handful abstractions for intermediate/advanced vim functionalities like [using macros on multiple lines or on quickfix list entries](https://www.youtube.com/watch?v=KlNzYMLK8N4)
 
 # How to install
-You can install using your favorite plugin manager, as usual. Here is the way to install with lazy.nvim:
+You can install using your favorite plugin manager, as usual. Here is the way to install with [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```lua
     {
         'zegabr/toolbox.nvim',
@@ -14,7 +14,7 @@ You can install using your favorite plugin manager, as usual. Here is the way to
     },
 ```
 
-# Exposed vim functions
+# Exposed vim functions (TODO: add usage example)
 - CdoMacro &lt;macro char&gt; | require('toolbox').cdo_macro('&lt;macro char&gt;')
 - CfdoMacro &lt;macro char&gt;| require('toolbox').cfdo_macro('&lt;macro char&gt;')
 - MultiLineMacro &lt;macro char&gt;| require('toolbox').multi_line_macro('&lt;macro char&gt;')
