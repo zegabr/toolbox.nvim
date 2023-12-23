@@ -12,7 +12,7 @@ You can install using your favorite plugin manager, as usual. Here is the way to
             vim.keymap.set("x", "<leader>m", ":MultiLineMacro ", { desc = 'prepare command for running macro per line selected' })
             vim.keymap.set('n', '<leader>S', require('toolbox').search_replace_snippet_on_file,
                 { noremap = true, silent = true, desc = 'global replace snippet normal mode' })
-            vim.keymap.set("x", "<leader>S", require('toolbox').search_replace_snippet_on_range,
+            vim.keymap.set("x", "<leader>S", ":SearchReplaceSnippetRange<CR>",
                 { desc = 'global replace snippet visual mode' })
         end
     },
