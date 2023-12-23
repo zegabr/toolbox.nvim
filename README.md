@@ -9,11 +9,11 @@ You can install using your favorite plugin manager, as usual. Here is the way to
         config = function()
             vim.keymap.set('n', '<leader><leader>%', require('toolbox').copy_filename,
                 { noremap = true, silent = true, desc = 'copy current file name to clipboard' })
-            vim.keymap.set("x", "<leader>m", ":MultiLineMacro ", { desc = 'prepare command for running macro per line selected' })
             vim.keymap.set('n', '<leader>S', require('toolbox').search_replace_snippet_on_file,
                 { noremap = true, silent = true, desc = 'global replace snippet normal mode' })
             vim.keymap.set("x", "<leader>S", ":SearchReplaceSnippetRange<CR>",
                 { desc = 'global replace snippet visual mode' })
+            vim.keymap.set("x", "<leader>m", ":MultiLineMacro ", { desc = 'run macro per line on visual mode' })
         end
     },
 ```
