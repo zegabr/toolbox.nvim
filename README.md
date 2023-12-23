@@ -7,9 +7,13 @@ You can install using your favorite plugin manager, as usual. Here is the way to
     {
         'zegabr/toolbox.nvim',
         config = function()
-            vim.keymap.set('n', '<leader><leader>%', require('toolbox').copy_filename,
+            -- required
+            require('toolbox')
+
+            -- optional
+            vim.keymap.set('n', '<leader><leader>%', ":CopyFilename<CR>",
                 { noremap = true, silent = true, desc = 'copy current file name to clipboard' })
-            vim.keymap.set('n', '<leader>S', require('toolbox').search_replace_snippet_on_file,
+            vim.keymap.set('n', '<leader>S', ":SearchReplaceSnippetFile<CR>",
                 { noremap = true, silent = true, desc = 'global replace snippet normal mode' })
             vim.keymap.set("x", "<leader>S", ":SearchReplaceSnippetRange<CR>",
                 { desc = 'global replace snippet visual mode' })
@@ -19,9 +23,9 @@ You can install using your favorite plugin manager, as usual. Here is the way to
 ```
 
 # Exposed vim functions (TODO: add usage example)
-- CdoMacro &lt;macro char&gt; | require('toolbox').cdo_macro('&lt;macro char&gt;')
-- CfdoMacro &lt;macro char&gt;| require('toolbox').cfdo_macro('&lt;macro char&gt;')
-- MultiLineMacro &lt;macro char&gt;| require('toolbox').multi_line_macro('&lt;macro char&gt;')
-- CopyFilename | require('toolbox').copy_filename()
-- SearchReplaceSnippetFile | require('toolbox').search_replace_snippet_on_file()
-- SearchReplaceSnippetRange| require('toolbox').search_replace_snippet_on_range()
+- CdoMacro &lt;macro char&gt;
+- CfdoMacro &lt;macro char&gt;
+- MultiLineMacro &lt;macro char&gt;
+- CopyFilename
+- SearchReplaceSnippetFile
+- SearchReplaceSnippetRange
