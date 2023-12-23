@@ -13,3 +13,12 @@ function CfdoMacro(char)
     -- Execute the command in Neovim
     vim.cmd(command)
 end
+
+-- Runs defined macro into all selected lines
+function MultiLineMacro(char)
+    -- Build the command string
+    local command = string.format("'<,'>:norm @%s", char)
+    -- Execute the command in Neovim
+    vim.cmd(command)
+end
+
