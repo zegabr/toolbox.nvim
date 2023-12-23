@@ -33,7 +33,7 @@ return {
     end,
 
     search_replace_snippet_on_range = function()
-        vim.api.nvim_input(":'<LT>,'>:s//gIc<Left><Left><Left><Left>")
+        vim.api.nvim_input(":'<LT>,'>s//gIc<Left><Left><Left><Left>")
     end,
 
 
