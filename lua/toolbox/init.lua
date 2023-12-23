@@ -26,4 +26,15 @@ return {
     copy_filename = function()
         vim.cmd([[:let @+ = fnamemodify(resolve(expand('%:p')), ':~:.')]])
     end,
+
+    search_replace_snippet_on_file = function()
+        vim.fn.feedkeys(':%s//gIc', 'n')
+        vim.api.nvim_input('<Left><Left><Left><Left>')
+    end,
+
+    search_replace_snippet_on_range = function()
+        vim.fn.feedkeys("'<,'>:s//gIc", 'n')
+        vim.api.nvim_input('<Left><Left><Left><Left>')
+    end,
+
 }
