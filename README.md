@@ -23,5 +23,5 @@ You can install using your favorite plugin manager, as usual. Here is the way to
 - CfdoMacro &lt;macro char&gt;| require('toolbox').cfdo_macro('&lt;macro char&gt;')
 - MultiLineMacro &lt;macro char&gt;| require('toolbox').multi_line_macro('&lt;macro char&gt;')
 - CopyFilename | require('toolbox').copy_filename()
--  | require('toolbox').search_replace_snippet_on_file()
--  | require('toolbox').search_replace_snippet_on_range()
+- SearchReplaceSnippetFile | require('toolbox').search_replace_snippet_on_file()
+- SearchReplaceSnippetRange| require('toolbox').search_replace_snippet_on_range()
