@@ -1,4 +1,4 @@
 ==============================================================================
-*toolbox.txt*
+*toolbox*
 
 See https://github.com/zegabr/toolbox.nvim/blob/main/README.md
