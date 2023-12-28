@@ -25,15 +25,18 @@ You can install using your favorite plugin manager, as usual. Here is the way to
 
 # Exposed neovim functions
 
-| Command   | Action  |
-|:---|:---|
-| `:CdoMacro <macro char>` | Run macro on every entry in the quickfix list |
-| `:CfdoMacro <macro char>` | Run macro on every file in quickfix list |
-| `:MultiLineMacro <macro char>` | Run macro on every line selected on visual mode |
-| `:CopyFilename` | Copy current buffer filename to the clipboard |
-| `:SearchReplaceSnippetFile` | Writes the search and replace command `:%s//gIc` with the cursor between the slashes, so you only need to write `search pattern`+`/`+`replace pattern` |
-| `:SearchReplaceSnippetRange` | Same as above, but for visual mode selections |
+Simply put, instead of running `:cdo execute "norm @q` for using the macro (in this case, stored on the register `q`) on all entries of quickfix list, you can use `:CdoMacro q`.
+
+
+| Command                        | Action                                                                                                                                                                                                                      |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `:CdoMacro <macro char>`       | Run macro on every entry in the quickfix list                                                                                                                                                                               |
+| `:CfdoMacro <macro char>`      | Run macro on every file in quickfix list                                                                                                                                                                                    |
+| `:MultiLineMacro <macro char>` | Run macro on every line selected on visual mode                                                                                                                                                                             |
+| `:CopyFilename`                | Copy current buffer filename to the clipboard                                                                                                                                                                               |
+| `:SearchReplaceSnippetFile`    | Writes the search and replace command `:%s//gIc` with the cursor between the slashes, so you only need to write `search pattern`+`/`+`replace pattern`+`<CR>` to start interacting with the search and replace builtin menu |
+| `:SearchReplaceSnippetRange`   | Same as above, but for visual mode selections                                                                                                                                                                               |
 
 # How to contribute
 
-Simply open a PR or issue with any useful command you think will be a good adition to the toolbox and I'll think about it. I'll probably accept any abstractions for general text editing (or coding) operations that are hard to remember how to use on vim (due to the size/complexity of the operation) and are useful (this is obviously a subjective topic).
+Simply open a PR or issue with any useful command you think will be a good addition to the toolbox and I'll think about it. I'll probably accept any abstractions for general text editing (or coding) operations that are hard to remember how to use on vim (due to the size/complexity of the operation) and are useful (this is obviously a subjective topic).
