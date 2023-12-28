@@ -7,9 +7,6 @@ You can install using your favorite plugin manager, as usual. Here is the way to
     {
         'zegabr/toolbox.nvim',
         config = function()
-            -- required
-            require('toolbox') -- TODO: make it self require on load
-
             -- optional
             vim.keymap.set('n', '<leader><leader>%', ":CopyFilename<CR>",
                 { noremap = true, silent = true, desc = 'copy current file name to clipboard' })
