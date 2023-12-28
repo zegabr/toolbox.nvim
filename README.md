@@ -7,7 +7,7 @@ You can install using your favorite plugin manager, as usual. Here is the way to
     {
         'zegabr/toolbox.nvim',
         config = function()
-            -- optional
+            -- optional mappings
             vim.keymap.set('n', '<leader><leader>%', ":CopyFilename<CR>",
                 { noremap = true, silent = true, desc = 'copy current file name to clipboard' })
             vim.keymap.set('n', '<leader>S', ":SearchReplaceSnippetFile<CR>",
