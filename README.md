@@ -27,9 +27,9 @@ You can install using your favorite plugin manager, as usual. Here is the way to
 
 | Command   | Action  |
 |:---|:---|
-| `:CdoMacro &lt;macro char&gt;` | Run macro on every entry in the quickfix list |
-| `:CfdoMacro &lt;macro char&gt;` | Run macro on every file in quickfix list |
-| `:MultiLineMacro &lt;macro char&gt;` | Run macro on every line selected on visual mode |
+| `:CdoMacro <macro char>` | Run macro on every entry in the quickfix list |
+| `:CfdoMacro <macro char>` | Run macro on every file in quickfix list |
+| `:MultiLineMacro <macro char>` | Run macro on every line selected on visual mode |
 | `:CopyFilename` | Copy current buffer filename to the clipboard |
 | `:SearchReplaceSnippetFile` | Writes the search and replace command `:%s//gIc` with the cursor between the slashes, so you only need to write `search pattern`+`/`+`replace pattern` |
 | `:SearchReplaceSnippetRange` | Same as above, but for visual mode selections |
