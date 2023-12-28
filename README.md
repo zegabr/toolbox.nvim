@@ -8,7 +8,7 @@ You can install using your favorite plugin manager, as usual. Here is the way to
         'zegabr/toolbox.nvim',
         config = function()
             -- required
-            require('toolbox')
+            require('toolbox') -- TODO: make it self require on load
 
             -- optional
             vim.keymap.set('n', '<leader><leader>%', ":CopyFilename<CR>",
@@ -22,10 +22,14 @@ You can install using your favorite plugin manager, as usual. Here is the way to
     },
 ```
 
-# Exposed vim functions (TODO: add usage example)
-- CdoMacro &lt;macro char&gt;
-- CfdoMacro &lt;macro char&gt;
-- MultiLineMacro &lt;macro char&gt;
-- CopyFilename
-- SearchReplaceSnippetFile
-- SearchReplaceSnippetRange
+# Exposed neovim functions
+
+| Command   | Action  |
+|:---|:---|
+| `:CdoMacro &lt;macro char&gt;` | Run macro on every entry in the quickfix list |
+| `:CfdoMacro &lt;macro char&gt;` | Run macro on every file in quickfix list |
+| `:MultiLineMacro &lt;macro char&gt;` | Run macro on every line selected on visual mode | 
+| `:CopyFilename` | Copy current buffer filename to the clipboard |
+| `:SearchReplaceSnippetFile` | Writes the search and replace command `:%s//gIc` with the cursor between the slashes, so you only need to write `search pattern`+`/`+`replace pattern` |
+| `:SearchReplaceSnippetRange` | Same as above, but for visual mode selections |
+
