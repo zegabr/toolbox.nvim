@@ -1,5 +1,9 @@
 # toolbox.nvim
 Handful abstractions for intermediate/advanced vim functionalities like [using macros on multiple lines or on quickfix list entries](https://www.youtube.com/watch?v=KlNzYMLK8N4)
+<!---
+# Sneak peak
+# TODO: add video showing how to use search replace and a multiline macro
+-->
 
 # How to install
 You can install using your favorite plugin manager, as usual. Here is the way to install with [lazy.nvim](https://github.com/folke/lazy.nvim):
