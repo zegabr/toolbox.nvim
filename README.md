@@ -36,6 +36,7 @@ Simply put, instead of running `:cdo execute "norm @q` for using the macro (in t
 | `:CopyFilename`                | Copy current buffer filename to the clipboard                                                                                                                                                                               |
 | `:SearchReplaceSnippetFile`    | Writes the search and replace command `:%s//gIc` with the cursor between the slashes, so you only need to write `search pattern`+`/`+`replace pattern`+`<CR>` to start interacting with the search and replace builtin menu |
 | `:SearchReplaceSnippetRange`   | Same as above, but for visual mode selections                                                                                                                                                                               |
+| `:DeleteLinesWithPattern`      | Deletes every line that has given pattern                                                                                                                                                                                   |
 
 # How to contribute
 
