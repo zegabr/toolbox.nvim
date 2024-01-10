@@ -38,4 +38,5 @@ return {
         local command = string.format('g/%s/d', pattern)
         vim.cmd(command)
     end
+    -- TODO: add more :g commands
 }
