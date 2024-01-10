@@ -32,4 +32,10 @@ return {
     search_replace_snippet_on_range = function()
         vim.api.nvim_input(":'<LT>,'>s//gIc<Left><Left><Left><Left>")
     end,
+
+    -- Deletes all lines containing given pattern
+    delete_lines_with_pattern = function(pattern)
+        local command = string.format('g/%s/d', pattern)
+        vim.cmd(command)
+    end
 }

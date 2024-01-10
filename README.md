@@ -28,14 +28,15 @@ You can install using your favorite plugin manager, as usual. Here is the way to
 Simply put, instead of running `:cdo execute "norm @q` for using the macro (in this case, stored on the register `q`) on all entries of quickfix list, you can use `:CdoMacro q`.
 
 
-| Command                        | Action                                                                                                                                                                                                                      |
-|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `:CdoMacro <macro char>`       | Run macro on every entry in the quickfix list                                                                                                                                                                               |
-| `:CfdoMacro <macro char>`      | Run macro on every file in quickfix list                                                                                                                                                                                    |
-| `:MultiLineMacro <macro char>` | Run macro on every line selected on visual mode                                                                                                                                                                             |
-| `:CopyFilename`                | Copy current buffer filename to the clipboard                                                                                                                                                                               |
-| `:SearchReplaceSnippetFile`    | Writes the search and replace command `:%s//gIc` with the cursor between the slashes, so you only need to write `search pattern`+`/`+`replace pattern`+`<CR>` to start interacting with the search and replace builtin menu |
-| `:SearchReplaceSnippetRange`   | Same as above, but for visual mode selections                                                                                                                                                                               |
+| Command                             | Action                                                                                                                                                                                                                      |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `:CdoMacro <macro char>`            | Run macro on every entry in the quickfix list                                                                                                                                                                               |
+| `:CfdoMacro <macro char>`           | Run macro on every file in quickfix list                                                                                                                                                                                    |
+| `:MultiLineMacro <macro char>`      | Run macro on every line selected on visual mode                                                                                                                                                                             |
+| `:CopyFilename`                     | Copy current buffer filename to the clipboard                                                                                                                                                                               |
+| `:SearchReplaceSnippetFile`         | Writes the search and replace command `:%s//gIc` with the cursor between the slashes, so you only need to write `search pattern`+`/`+`replace pattern`+`<CR>` to start interacting with the search and replace builtin menu |
+| `:SearchReplaceSnippetRange`        | Same as above, but for visual mode selections                                                                                                                                                                               |
+| `:DeleteLinesWithPattern <pattern>` | Deletes every line that has given pattern                                                                                                                                                                                   |
 
 # How to contribute
 
