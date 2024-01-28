@@ -37,6 +37,16 @@ return {
     delete_lines_with_pattern = function(pattern)
         local command = string.format('g/%s/d', pattern)
         vim.cmd(command)
+    end,
+
+    -- Writes global search and apply macro snippet for you
+    global_macro = function(char)
+        vim.fn.feedkeys(':g//norm @', 'n')
+        vim.fn.feedkeys(char, 'n')
+        vim.fn.feedkeys(' update', 'n')
+        for _ = 1, 15 do
+            vim.api.nvim_input('<Left>')
+        end
     end
-    -- TODO: add more :g commands
+
 }
